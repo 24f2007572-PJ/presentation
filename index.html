@@ -18,89 +18,63 @@
       <!-- Title Slide -->
       <section>
         <h2>RevealJS Presentation</h2>
-        <p><strong>Email:</strong>(24f2007572@ds.study.iitm.ac.in)</p>
-        <p class="fragment">Includes Markdown, Fragments, Math, and Code</p>
+        <p>24f2007572@ds.study.iitm.ac.in</p>
         <aside class="notes">
-          Introduce yourself and mention your email for identification.
+          Introduce yourself and highlight your email.
         </aside>
       </section>
 
       <!-- Markdown Slide -->
       <section data-markdown>
-        <textarea data-template>
+<textarea data-template>
 ### Markdown Slide
 
-- This slide uses **Markdown**
-- RevealJS supports Markdown natively
-- You can add:
-  - **Bold text**
-  - _Italic text_
-  - Lists, quotes, and more
+This slide is written using **Markdown**.
 
-> Simple, clean, and readable formatting!
+Email: 24f2007572@ds.study.iitm.ac.in
+
+> Markdown is simple but powerful!
 
 Note:
-Explain how Markdown is useful for creating slides quickly.
-        </textarea>
+Email included here in plain text to ensure visibility.
+</textarea>
       </section>
 
       <!-- Fragments Slide -->
       <section>
-        <h3>Animated Fragments (24f2007572@ds.study.iitm.ac.in)</h3>
+        <h3>Animated Fragments</h3>
         <ul>
-          <li class="fragment">Appears First</li>
-          <li class="fragment">Appears Next</li>
-          <li class="fragment">Appears Last</li>
+          <li class="fragment">First Point</li>
+          <li class="fragment">Second Point</li>
+          <li class="fragment">Third Point</li>
         </ul>
-        <aside class="notes">
-          Demonstrate how slides can reveal content step-by-step using fragments.
-        </aside>
       </section>
 
       <!-- Code Slide -->
       <section>
-        <h3>Code Sample with Syntax Highlighting</h3>
-        <pre><code class="language-python">
+        <h3>Code Example</h3>
+<pre><code class="language-python">
 def compound_interest(P, r, n, t):
-    # P = principal, r = rate, n = compounds/year, t = years
     A = P * (1 + r/n)**(n*t)
     return A
 
 print(compound_interest(1000, 0.05, 4, 5))
-        </code></pre>
-        <aside class="notes">
-          Explain the compound interest formula in Python implementation.
-        </aside>
+</code></pre>
       </section>
 
-      <!-- Math Formula Slide -->
+      <!-- Math Slide -->
       <section>
-        <h3>Financial Formula (24f2007572@ds.study.iitm.ac.in)</h3>
-        <p>Compound Interest Equation:</p>
-        <p>
-          \[
+        <h3>Financial Equation</h3>
+        \[
           A = P\left(1 + \frac{r}{n}\right)^{nt}
-          \]
-        </p>
-        <ul>
-          <li class="fragment">\(P\) = Principal Amount</li>
-          <li class="fragment">\(r\) = Annual Interest Rate</li>
-          <li class="fragment">\(n\) = Compounds per Year</li>
-          <li class="fragment">\(t\) = Time in Years</li>
-        </ul>
-        <aside class="notes">
-          Walk through each variable and explain its significance in finance.
-        </aside>
+        \]
       </section>
 
       <!-- Contact Slide -->
       <section>
-        <h3>Contact</h3>
-        <p><strong>Email:</strong> 24f2007572@ds.study.iitm.ac.in</p>
-        <p class="fragment">Thank you for viewing!</p>
-        <aside class="notes">
-          End the presentation and clearly show contact information.
-        </aside>
+        <h2>Contact</h2>
+        <p>24f2007572@ds.study.iitm.ac.in</p>
+        <p>Thank you!</p>
       </section>
 
     </div>
@@ -109,7 +83,7 @@ print(compound_interest(1000, 0.05, 4, 5))
   <script>
     Reveal.initialize({
       hash: true,
-      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+      plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
     });
   </script>
 </body>

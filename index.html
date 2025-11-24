@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RevealJS Presentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title Slide -->
+      <section>
+        <h2>RevealJS Presentation</h2>
+        <p>By: 24f2007572@ds.study.iitm.ac.in</p>
+        <p class="fragment">Featuring Markdown, Fragments, Math, and Code</p>
+        <aside class="notes">
+          Welcome the audience and introduce the scope of presentation.
+        </aside>
+      </section>
+
+      <!-- Markdown Slide -->
+      <section data-markdown>
+        <textarea data-template>
+### Markdown Slide
+
+- This slide is written using **Markdown**
+- RevealJS supports Markdown natively
+- You can add:
+  - **Bold text**
+  - _Italic text_
+  - Lists, links, and more
+
+> Markdown is simple but powerful!
+
+Note:
+Explain how Markdown enables easy formatting for non-technical users.
+        </textarea>
+      </section>
+
+      <!-- Fragments Slide -->
+      <section>
+        <h3>Animated Fragments</h3>
+        <ul>
+          <li class="fragment">Point One</li>
+          <li class="fragment">Point Two</li>
+          <li class="fragment">Point Three</li>
+        </ul>
+        <aside class="notes">
+          Use this slide to demonstrate how fragments animate content sequentially.
+        </aside>
+      </section>
+
+      <!-- Code Sample Slide -->
+      <section>
+        <h3>Code Sample with Highlighting</h3>
+        <pre><code class="language-python">
+def financial_future_value(P, r, n):
+    # P = principal, r = rate, n = periods
+    FV = P * (1 + r)**n
+    return FV
+
+print(financial_future_value(1000, 0.05, 10))
+        </code></pre>
+        <aside class="notes">
+          Explain how Python code calculates future value using compound interest.
+        </aside>
+      </section>
+
+      <!-- Math Formula Slide -->
+      <section>
+        <h3>Financial Formula</h3>
+        <p>Compound Interest:</p>
+        <p>
+          \[
+          A = P(1 + \frac{r}{n})^{nt}
+          \]
+        </p>
+        <p class="fragment">Where:</p>
+        <ul>
+          <li class="fragment">\( A \) = Final Amount</li>
+          <li class="fragment">\( P \) = Principal</li>
+          <li class="fragment">\( r \) = Interest Rate</li>
+          <li class="fragment">\( n \) = Number of Compounds per Period</li>
+          <li class="fragment">\( t \) = Time</li>
+        </ul>
+        <aside class="notes">
+          Walk through each variable and its financial significance.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+    });
+  </script>
+</body>
+</html>
